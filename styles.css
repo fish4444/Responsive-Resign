@@ -1,20 +1,26 @@
-#logoBar{
-  width: 30vw;
-  height: 100vh;
-}
-#siteLogo{
-  width: 100%;
-}
 body {
-  display: flex;
+  margin: 0px;
+  padding: 0px;
+  /* margin-top: 0px; */
 }
-#staffGallery{
-  width: 70vw;
-  display: inherit;
+ 
+head {
+	width: 8rem;
+	height: 8rem;
+	object-fit: cover;
+	border-radius: 50%;
+}
+h5, img {
+	text-align: center;
+}
+.logo {
+  padding-top: 30px;
+}
+.logoline { 
+  border-width: 1px;
+  color: #d20a0a;
+  padding: 10000px;
+  height: 1000px;
+  
+}
 
-}
-.galleryImage{
-  width: 100%;
-  height: auto;
-  height: 300px;
-}
