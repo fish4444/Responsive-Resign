@@ -1,62 +1,71 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #FBF9F1;
+  background-color: #ffffff;
   font-family: Arial, sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 .main-wrapper {
-  background-color: #FBF9F1; /* or whatever color you want */
+  border: 1px solid #000; /* Thin border around whole page */
 }
 
-
-.logo-img {
-  width: 350px;
-  max-width: 100%;
-}
-
-.divider-line {
-  width: 80%;
-  height: 1px;
-  background-color: #000;
-}
-
-.product-card {
-  background-color: #FBF9F1;
-  width: 700px;
-  padding: 1.5rem;
-  border-radius: 20px;
-  box-shadow: 5px 8px 15px rgba(0, 0, 0, 0.1);
-}
-
-.product-image {
-  width: 250px;
+.icon-img {
+  width: 30px;
   height: auto;
-  border-radius: 12px;
-  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.1);
-  flex-shrink: 0;
 }
 
-.product-description {
-  max-width: 370px;
+.intro-text h4 {
+  font-weight: 500;
+  max-width: 500px;
 }
 
-.product-card h5 {
-  font-weight: 700;
-  margin-bottom: 0.5rem;
+.highlight {
+  color: blue;
 }
 
-.search-card {
-  background-color: #FBF9F1;
-  width: 300px;
-  border-radius: 20px;
+.job {
+  color: gray;
+  font-size: 0.9rem;
 }
 
-.footer {
-  background-color: #A7D2DA;
+.image-section {
+  max-width: 300px;
+}
+
+.profile-img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+}
+
+.caption {
+  font-size: 0.8rem;
+  color: black;
+  margin-top: 5px;
 }
 
 .content-wrapper {
-  gap: 3rem;
-  padding-top: 2rem;
+  gap: 2rem;
+}
+
+/* Responsive stacking on smaller screens */
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .intro-text h4 {
+    font-size: 1.2rem;
+  }
 }
