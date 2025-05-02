@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white !important;
+  font-family: Arial, sans-serif;
+}
+
+a {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+
+a:hover {
+  text-decoration: underline;
+}
+
+.main-wrapper {
+  /*border: 1px solid #000; /* Thin border around whole page */
+  border: none !important;
+  background-color: white !important;
+}
+
+.icon-img {
+  width: 30px;
+  height: auto;
+}
+
+.intro-text h4 {
+  font-weight: 500;
+  max-width: 300px;
+}
+
+.highlight {
+  color: blue;
+}
+
+.job {
+  color: gray;
+  font-size: 0.9rem;
+}
+
+.image-section {
+  max-width: 300px;
+}
+
+.profile-img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+}
+
+.caption {
+  font-size: 0.8rem;
+  color: black;
+  margin-top: 5px;
+}
+
+.content-wrapper {
+  gap: 2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+/* Put the text left and image right */
+.intro-text {
+  order: 1;
+  flex: 1;
+}
+
+.image-section {
+  order: 2;
+}
+
+/* Responsive stacking on smaller screens */
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .intro-text h4 {
+    font-size: 1.2rem;
+  }
+}
