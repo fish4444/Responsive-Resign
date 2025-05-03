@@ -12,42 +12,86 @@
   <div class="container-fluid main-wrapper">
 
     <!-- Navigation -->
-    <div class="d-flex justify-content-between align-items-center py-3 px-4">
-      <div class="d-flex align-items-center gap-2">
-        <img src="Port-Images\guitar 1.png" alt="guitar 1" class="icon-img">
+    <div class="navbar">
+      <div class="nav-left">
+        <img src="Port-Images/guitar 1.png" alt="guitar 1" class="icon-img">
         <strong>Andrew Herring</strong>
       </div>
-      <div class="d-flex gap-4">
-        <a href="#">Work</a>
-        <a href="#">Music</a>
-        <a href="#">About</a>
-        <a href="#">Resume</a>
+      <div class="nav-right">
+        <a href="#work">Work</a>
+        <a href="#music">Music</a>
+        <a href="#about">About</a>
+        <a href="#resume">Resume</a>
       </div>
     </div>
 
-    <!-- Main Content -->
-    <div class="d-flex flex-wrap justify-content-between align-items-start px-4 py-4 content-wrapper">
+    <!-- ===== HOME SECTION ===== -->
+    <div class="content-wrapper">
 
-      <!-- Left Text -->
       <div class="intro-text">
         <h4>Hi, I am Andrew! I am a <span class="highlight">music producer</span> and software engineer at Brown University</h4>
         <p class="job">Corporate Sponsorship Intern at Live Nation Canada</p>
         <p class="job">Summer Data Analyst at Birch Hill Private Equity Group</p>
       </div>
 
-      <!-- Right Image -->
       <div class="image-section text-center">
-        <img src="Port-Images\AMP Photo.png" alt="Advanced Music Program" class="profile-img">
+        <img src="Port-Images/AMP Photo.png" alt="Advanced Music Program" class="profile-img">
         <p class="caption">Advanced Music Program, 2023</p>
       </div>
 
     </div>
 
-    <!-- Project / Performances -->
-    <div class="d-flex align-items-center gap-2 px-4 py-4">
+    <div class="project-section">
       <h5>Project / Performances</h5>
-      <img src="Port-Images\download 1.png" alt="Piano Icon" class="icon-img">
+      <img src="Port-Images/download 1.png" alt="Piano Icon">
     </div>
+
+    <!-- ===== WORK SECTION ===== -->
+    <section id="work" class="section">
+      <h2>Work</h2>
+      <div class="work-cards">
+        <!-- CARD 1 -->
+        <div class="card pink-card">
+          <div class="card-img-placeholder">
+            <img src="Port-Images/Persona Photo.png" alt="Persona Photo" class="card-img">
+          </div>
+          <div class="tags">
+            <span>Research</span><span>Data Analytics</span><span>UX</span>
+          </div>
+          <h4>UI/UX: Persona & Storyboarding</h4>
+          <p>Develop Personas and Storyboards from on-site research</p>
+        </div>
+        <!-- CARD 2 -->
+        <div class="card blue-card">
+          <div class="card-img-placeholder">
+            <img src="Port-Images/another-image.png" alt="Another Image" class="card-img">
+          </div>
+          <div class="tags">
+            <span>Design</span><span>Accessibility</span><span>UI</span>
+          </div>
+          <h4>UI/UX: Accessible Components</h4>
+          <p>Designed and Implemented Accessible components to Opera’s search engine</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MUSIC SECTION ===== -->
+    <section id="music" class="section">
+      <h2>Music</h2>
+      <p>Coming soon! (Or list your performances, albums, etc.)</p>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section id="about" class="section">
+      <h2>About</h2>
+      <p>I am a software engineer, music producer, and data analyst passionate about building accessible digital experiences and creative projects.</p>
+    </section>
+
+    <!-- ===== RESUME SECTION ===== -->
+    <section id="resume" class="section">
+      <h2>Resume</h2>
+      <p>Download coming soon! (Or link to PDF)</p>
+    </section>
 
   </div>
 </body>
