@@ -113,36 +113,30 @@ a:hover {
   display: flex;
   gap: 2rem;
   flex-wrap: wrap;
-  justify-content: center;   /* Center the cards */
+  justify-content: center;
 }
 
 .card {
   background-color: white;
   border-radius: 15px;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
-  padding: 1rem;
   max-width: 450px;
-}
-
-.card-img-placeholder {
-  width: 100%;
-  height: 500px;
-  background: linear-gradient(to bottom, #28d4f2, #0a74da);
-  border-radius: 10px;
-  margin-bottom: 10px;
   overflow: hidden;
-  position: relative;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.card-img {
+.card-header-img {
   width: 100%;
   height: auto;
   border-radius: 10px;
-  display: block;
 }
 
 .tags {
-  margin-bottom: 1rem;  /* Space below the tags */
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
 }
 
 .tags span {
@@ -154,13 +148,15 @@ a:hover {
   font-size: 0.8rem;
 }
 
-.pink-card {
-  background-color: #310c0c;
+.card h4 {
+  text-align: center;
 }
 
-.blue-card {
-  background-color: #b3ecf8;
+.card p {
+  text-align: center;
+  max-width: 90%;
 }
+
 
 /* ===== MUSIC / ABOUT / RESUME SECTIONS ===== */
 .section p {
