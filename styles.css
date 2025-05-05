@@ -1,86 +1,62 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: white !important;
+  background-color: #FBF9F1;
   font-family: Arial, sans-serif;
 }
 
-a {
-  text-decoration: none;
-  color: inherit !important;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
 .main-wrapper {
-  border: 1px solid #000; /* Thin border around whole page */
-  background-color: white !important;
+  background-color: #FBF9F1; /* or whatever color you want */
 }
 
-.icon-img {
-  width: 30px;
+
+.logo-img {
+  width: 350px;
+  max-width: 100%;
+}
+
+.divider-line {
+  width: 80%;
+  height: 1px;
+  background-color: #000;
+}
+
+.product-card {
+  background-color: #FBF9F1;
+  width: 700px;
+  padding: 1.5rem;
+  border-radius: 20px;
+  box-shadow: 5px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+  width: 250px;
   height: auto;
+  border-radius: 12px;
+  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
 }
 
-.intro-text h4 {
-  font-weight: 500;
-  max-width: 500px;
+.product-description {
+  max-width: 370px;
 }
 
-.highlight {
-  color: blue;
+.product-card h5 {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
 }
 
-.job {
-  color: gray;
-  font-size: 0.9rem;
+.search-card {
+  background-color: #FBF9F1;
+  width: 300px;
+  border-radius: 20px;
 }
 
-.image-section {
-  max-width: 300px;
-}
-
-.profile-img {
-  width: 100%;
-  border-radius: 15px;
-  box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
-}
-
-.caption {
-  font-size: 0.8rem;
-  color: black;
-  margin-top: 5px;
+.footer {
+  background-color: #A7D2DA;
 }
 
 .content-wrapper {
-  gap: 2rem;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: flex-start;
-}
-
-/* Put the text left and image right */
-.intro-text {
-  order: 1;
-  flex: 1;
-}
-
-.image-section {
-  order: 2;
-}
-
-/* Responsive stacking on smaller screens */
-@media (max-width: 768px) {
-  .content-wrapper {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .intro-text h4 {
-    font-size: 1.2rem;
-  }
+  gap: 3rem;
+  padding-top: 2rem;
 }
