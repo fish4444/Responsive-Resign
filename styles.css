@@ -1,13 +1,13 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #ffffff;
+  background-color: white !important;
   font-family: Arial, sans-serif;
 }
 
 a {
   text-decoration: none;
-  color: black;
+  color: inherit !important;
 }
 
 a:hover {
@@ -16,6 +16,7 @@ a:hover {
 
 .main-wrapper {
   border: 1px solid #000; /* Thin border around whole page */
+  background-color: white !important;
 }
 
 .icon-img {
@@ -55,6 +56,20 @@ a:hover {
 
 .content-wrapper {
   gap: 2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+/* Put the text left and image right */
+.intro-text {
+  order: 1;
+  flex: 1;
+}
+
+.image-section {
+  order: 2;
 }
 
 /* Responsive stacking on smaller screens */
